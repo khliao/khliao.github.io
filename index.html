@@ -51,22 +51,16 @@
     }
     
     .hidden-link {
-      color: #333333;
-      text-decoration: none;
-      position: relative;
+      display: none;
     }
     
-    .hidden-link:hover::before {
-      content: attr(data-link);
-      position: absolute;
-      bottom: -20px;
-      left: 0;
-      background-color: #2e4053;
-      color: #ffffff;
-      padding: 5px;
-      border-radius: 5px;
-      font-size: 12px;
-      white-space: nowrap;
+    .category-link {
+      color: #333333;
+      text-decoration: none;
+    }
+    
+    .category-link:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -82,55 +76,46 @@
   <div id="content">
     <div id="left-column">
       <div class="blog-post">
-        <h2>文章標題1</h2>
-        <p>這是第一篇部落格文章的內容。</p>
+        <h2>台灣對美、中展現「敬畏的區隔」</h2>
+        <p>內容1</p>
       </div>
       
       <div class="blog-post">
-        <h2>文章標題2</h2>
-        <p>這是第二篇部落格文章的內容。</p>
+        <h2>總統候選人完全忽略的高教漏洞</h2>
+        <p>內容2</p>
       </div>
       
       <div class="blog-post">
-        <h2>文章標題3</h2>
-        <p>這是第三篇部落格文章的內容。</p>
+        <h2>呂秀蓮投入總統大選，對藍綠兩陣營的意義</h2>
+        <p>內容3</p>
       </div>
       
       <div class="blog-post">
-        <h2>文章標題4</h2>
-        <p>這是第四篇部落格文章的內容。</p>
+        <h2>民進黨應消除2020大選國安單位的不確定因素</h2>
+        <p>內容4</p>
       </div>
       
       <div class="blog-post">
-        <h2>文章標題5</h2>
-        <p>這是第五篇部落格文章的內容。</p>
+        <h2>總統初選民調的非理性效應</h2>
+        <p>內容5</p>
       </div>
     </div>
     
     <div id="right-column">
       <h3>文章分類</h3>
       <ul>
-        <li><a class="hidden-link" href="#" data-link="分類1">分類1</a></li>
-        <li><a class="hidden-link" href="#" data-link="分類2">分類2</a></li>
-        <li><a class="hidden-link" href="#" data-link="分類3">分類3</a></li>
-        <li><a class="hidden-link" href="#" data-link="分類4">分類4</a></li>
-        <li><a class="hidden-link" href="#" data-link="分類5">分類5</a></li>
+        <li><a class="category-link" href="#" target="_blank">首頁</a></li>
       </ul>
-      
       <h3>連結</h3>
       <ul>
-        <li><a class="hidden-link" href="https://taiwanmemenews.social" target="_blank" data-link="首頁">首頁</a></li>
-      </ul>
-      <ul>
-        <li><a class="hidden-link" href="https://www.youtube.com/台灣迷因新聞台" target="_blank" data-link="YouTube">YouTube</a></li>
-      </ul>
-      <ul>
-        <li><a class="hidden-link" href="https://matters.news/@aquariusboy" target="_blank" data-link="Matters">Matters</a></li>
+        <li><a class="category-link" href="#" target="_blank">YouTube</a></li>
+        <li><a class="category-link" href="#" target="_blank">Matters</a></li>
       </ul>
     </div>
   </div>
 </body>
 </html>
+
 
 
 
