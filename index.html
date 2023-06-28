@@ -1,90 +1,114 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <title>台灣迷因事務所</title>
+  <title>台灣迷因傳播事務所</title>
   <style>
-    /* CSS 樣式可以放在這裡 */
     body {
+      background-color: #b3e6cc;
       margin: 0;
       padding: 0;
     }
     
-    .container {
-      display: flex;
-      width: 100%;
-    }
-    
-    .left-column {
-      width: 20%;
-      background-color: #f0f0f0;
+    #header {
+      background-color: #4db8ff;
+      color: #ffffff;
       padding: 20px;
-    }
-    
-    .middle-column {
-      width: 60%;
-      background-color: #ffffff;
-      padding: 20px;
-    }
-    
-    .right-column {
-      width: 20%;
-      background-color: #f0f0f0;
-      padding: 20px;
-    }
-    
-    .image-container {
       text-align: center;
     }
     
-    .image-container img {
-      max-width: 100%;
-      height: auto;
+    #intro {
+      text-align: center;
+      padding: 20px;
+    }
+    
+    #blog {
+      width: 80%;
+      margin: 0 auto;
+      background-color: #ffffff;
+      padding: 20px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    
+    .blog-post {
+      margin-bottom: 20px;
+    }
+    
+    .category {
+      float: right;
+      margin-right: 20px;
+    }
+    
+    .category a {
+      color: #333333;
+      text-decoration: none;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <div class="left-column">
-      <h2>文章目錄</h2>
-      <ul>
-        <li><a href="#">文章標題1</a></li>
-        <li><a href="#">文章標題2</a></li>
-        <li><a href="#">文章標題3</a></li>
-        <!-- 在這裡添加更多文章目錄 -->
-      </ul>
+  <div id="header">
+    <h1>台灣迷因傳播事務所</h1>
+  </div>
+  
+  <div id="intro">
+    <p>歡迎來到台灣迷因傳播事務所的部落格。在這裡，我們分享有趣的台灣迷因和文化相關的內容。</p>
+  </div>
+  
+  <div id="blog">
+    <div class="blog-post">
+      <h2>文章標題1</h2>
+      <p>這是第一篇部落格文章的內容。</p>
+      <div class="category">
+        <a href="#">分類1</a>
+      </div>
     </div>
-    <div class="middle-column">
-      <div class="image-container">
-        <img src="/images/logo.jpg" alt="圖片">
+    
+    <div class="blog-post">
+      <h2>文章標題2</h2>
+      <p>這是第二篇部落格文章的內容。</p>
+      <div class="category">
+        <a href="#">分類2</a>
       </div>
-      <h1>最新新聞</h1>
-      <div class="article">
-        <h2>文章標題1</h2>
-        <p>文章內容1</p>
-      </div>
-      <div class="article">
-        <h2>文章標題2</h2>
-        <p>文章內容2</p>
-      </div>
-      <div class="article">
-        <h2>文章標題3</h2>
-        <p>文章內容3</p>
-      </div>
-      <!-- 在這裡添加更多新聞文章 -->
     </div>
-    <div class="right-column">
-      <h2>官方網站</h2>
-      <ul>
-        <li><a href="#">官方網站1</a></li>
-        <li><a href="#">官方網站2</a></li>
-        <li><a href="#">官方網站3</a></li>
-        <!-- 在這裡添加更多官方網站連結 -->
-      </ul>
+    
+    <div class="blog-post">
+      <h2>文章標題3</h2>
+      <p>這是第三篇部落格文章的內容。</p>
+      <div class="category">
+        <a href="#">分類1</a>
+      </div>
     </div>
+    
+    <div class="blog-post">
+      <h2>文章標題4</h2>
+      <p>這是第四篇部落格文章的內容。</p>
+      <div class="category">
+        <a href="#">分類3</a>
+      </div>
+    </div>
+    
+    <div class="blog-post">
+      <h2>文章標題5</h2>
+      <p>這是第五篇部落格文章的內容。</p>
+      <div class="category">
+        <a href="#">分類2</a>
+      </div>
+    </div>
+  </div>
+  
+  <div id="sidebar">
+    <h3>文章分類</h3>
+    <ul>
+      <li><a href="#">分類1</a></li>
+      <li><a href="#">分類2</a></li>
+      <li><a href="#">分類3</a></li>
+      <li><a href="#">分類4</a></li>
+      <li><a href="#">分類5</a></li>
+    </ul>
   </div>
 </body>
 </html>
+
 
 
 
