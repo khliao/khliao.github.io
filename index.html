@@ -59,6 +59,25 @@
       color: #333333;
       text-decoration: none;
     }
+    
+    .hidden-link {
+      color: #333333;
+      text-decoration: none;
+      position: relative;
+    }
+    
+    .hidden-link:hover::before {
+      content: attr(data-link);
+      position: absolute;
+      bottom: -20px;
+      left: 0;
+      background-color: #2e4053;
+      color: #ffffff;
+      padding: 5px;
+      border-radius: 5px;
+      font-size: 12px;
+      white-space: nowrap;
+    }
   </style>
 </head>
 <body>
@@ -67,15 +86,7 @@
   </div>
   
   <div id="intro">
-    <p>歡迎來到台灣迷因傳播事務所的部落格。
-      
-本台致力於去中心化的新聞編譯，靠著人們的新聞想像力創作新聞，並以事實為根基。只要你夠迷因，歡迎成為本新聞台觀眾喔。
-
-0.Mastodon: https://taiwanmemenews.social
-
-1.YouTube: https://www.youtube.com/台灣迷因新聞台
-
-2.Matters: https://matters.news/@aquariusboy</p>
+    <p>歡迎來到台灣迷因傳播事務所的部落格。在這裡，我們分享有趣的台灣迷因和文化相關的內容。</p>
   </div>
   
   <div id="content">
@@ -130,10 +141,17 @@
         <li><a href="#">分類4</a></li>
         <li><a href="#">分類5</a></li>
       </ul>
+      <h3>連結</h3>
+      <ul>
+        <li><a class="hidden-link" href="#" data-link="https://taiwanmemenews.social">首頁</a></li>
+        <li><a class="hidden-link" href="#" data-link="https://www.youtube.com/台灣迷因新聞台">YouTube</a></li>
+        <li><a class="hidden-link" href="#" data-link="https://matters.news/@aquariusboy">Matters</a></li>
+      </ul>
     </div>
   </div>
 </body>
 </html>
+
 
 
 
