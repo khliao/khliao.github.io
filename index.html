@@ -1,129 +1,83 @@
-非常抱歉之前的錯誤。以下是修正後的 HTML 網頁範例，將文章分類和連結放置在右欄：
-
-```html
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>台灣迷因傳播事務所</title>
   <style>
     body {
-      background-color: #e7e9e9;
+      font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
     }
-    
-    #header {
-      background-color: #2e4053;
-      color: #ffffff;
-      padding: 20px;
-      text-align: center;
-    }
-    
-    #intro {
-      background-color: #f0f3f4;
-      padding: 20px;
-      text-align: center;
-      color: #333333;
-    }
-    
-    #content {
-      width: 80%;
+
+    .container {
+      max-width: 960px;
       margin: 0 auto;
-      background-color: #ffffff;
       padding: 20px;
-      margin-top: 20px;
-      margin-bottom: 20px;
-      display: flex;
-      flex-wrap: wrap;
     }
-    
-    #left-column {
-      width: 70%;
-      border-right: 2px solid #dcdde1;
-      padding-right: 20px;
+
+    .header {
+      background-color: #3c6382;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
     }
-    
-    #right-column {
+
+    h1 {
+      font-size: 36px;
+      margin: 0;
+    }
+
+    .description {
+      font-size: 18px;
+      margin-top: 10px;
+    }
+
+    .sidebar {
+      float: right;
       width: 30%;
-      padding-left: 20px;
+      background-color: #a5b1c2;
+      color: #fff;
+      padding: 20px;
     }
-    
-    .blog-post {
-      margin-bottom: 20px;
-    }
-    
-    .hidden-link {
-      display: none;
-    }
-    
-    .category-link {
-      color: #333333;
+
+    .sidebar a {
+      display: block;
+      color: #fff;
+      margin-bottom: 10px;
       text-decoration: none;
     }
-    
-    .category-link:hover {
-      text-decoration: underline;
+
+    .content {
+      width: 70%;
+      background-color: #fff;
+      padding: 20px;
     }
   </style>
 </head>
 <body>
-  <div id="header">
-    <h1>台灣迷因傳播事務所</h1>
-  </div>
-  
-  <div id="intro">
-    <p>本台致力於去中心化的新聞編譯，靠著人們的新聞想像力創作新聞，並以事實為根基。只要你夠迷因，歡迎成為本新聞台觀眾喔。</p>
-  </div>
-  
-  <div id="content">
-    <div id="left-column">
-      <div class="blog-post">
-        <h2>標題1</h2>
-        <p>內容1</p>
-      </div>
-      
-      <div class="blog-post">
-        <h2>標題2</h2>
-        <p>內容2</p>
-      </div>
-      
-      <div class="blog-post">
-        <h2>標題3</h2>
-        <p>內容3</p>
-      </div>
-      
-      <div class="blog-post">
-        <h2>標題4</h2>
-        <p>內容4</p>
-      </div>
-      
-      <div class="blog-post">
-        <h2>標題5</h2>
-        <p>內容5</p>
-      </div>
-    </div>
-    
-    <div id="right-column">
-      <h3>文章分類</h3>
-      <ul>
-       
+  <div class="container">
+    <header class="header">
+      <h1>台灣迷因事務所</h1>
+    </header>
 
- <li><a class="category-link" href="#" target="_blank">首頁</a></li>
-      </ul>
-      
-      <h3>連結</h3>
-      <ul>
-        <li><a class="category-link" href="#" target="_blank">YouTube</a></li>
-        <li><a class="category-link" href="#" target="_blank">Matters</a></li>
-      </ul>
+    <div class="content">
+      <h2>簡介</h2>
+      <p class="description">本台致力於去中心化的新聞編譯，靠著人們的新聞想像力創作新聞，並以事實為根基。只要你夠迷因，歡迎成為本新聞台觀眾喔。</p>
     </div>
+
+    <aside class="sidebar">
+      <h2>相關連結</h2>
+      <a href="#">連結1</a>
+      <a href="#">連結2</a>
+      <a href="#">連結3</a>
+    </aside>
   </div>
 </body>
 </html>
-```
 
-這個修改後的範例將文章分類和連結移至右欄中，請您嘗試使用這個修正過的版本。
 
 
 
